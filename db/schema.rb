@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20170108212952) do
   create_table "punches", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "site",       limit: 1, default: 0, null: false
     t.string   "site_id",                          null: false
+    t.integer  "direction",  limit: 1, default: 0, null: false
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
-    t.integer  "direction",  limit: 1, default: 0, null: false
   end
 
 end
