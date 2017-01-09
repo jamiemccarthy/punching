@@ -13,4 +13,5 @@ Is it punching down for everyone or just me?
     mysql> grant all on punching_development.* to 'punching'@'localhost';
     mysql> grant all on punching_test.* to 'punching'@'localhost';
 
-    bundle exec rake db:create db:migrate db:setup
+    bundle install --path vendor/bundle
+    bundle exec rails db:create db:migrate db:setup
